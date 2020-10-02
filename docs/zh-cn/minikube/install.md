@@ -76,12 +76,49 @@ sudo mv minikube /usr/local/bin/
 
 ### 3.3 确认安装
 
-- --vm-driver类型 https://kubernetes.io/zh/docs/setup/learning-environment/minikube/#specifying-the-vm-driver
-
-?> 
+```bash
+minikube start --vm-driver=none --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
+```
 
 ```bash
-minikube start --vm-driver=virtualbox
-# 或者在需要时
-minikube start --vm-driver=virtualbox --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
+bourne@vm-10-0-2-100:~$ sudo minikube start --vm-driver=none --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
+😄  minikube v1.13.1 on Ubuntu 20.04 (vbox/amd64)
+✨  Using the none driver based on existing profile
+
+🧯  The requested memory allocation of 1987MiB does not leave room for system overhead (total system memory: 1987MiB). You may face stability issues.
+💡  Suggestion: Start minikube with less memory allocated: 'minikube start --memory=1987mb'
+
+👍  Starting control plane node minikube in cluster minikube
+🔄  Restarting existing none bare metal machine for "minikube" ...
+ℹ️  OS release is Ubuntu 20.04.1 LTS
+🐳  Preparing Kubernetes v1.19.2 on Docker 19.03.13 ...
+    ▪ kubelet.resolv-conf=/run/systemd/resolve/resolv.conf
+    > kubectl.sha256: 65 B / 65 B [--------------------------] 100.00% ? p/s 0s
+    > kubelet.sha256: 65 B / 65 B [--------------------------] 100.00% ? p/s 0s
+    > kubeadm.sha256: 65 B / 65 B [--------------------------] 100.00% ? p/s 0s
+    > kubectl: 41.01 MiB / 41.01 MiB [---------------] 100.00% 2.84 MiB p/s 15s
+    > kubeadm: 37.30 MiB / 37.30 MiB [---------------] 100.00% 2.63 MiB p/s 15s
+    > kubelet: 104.88 MiB / 104.88 MiB [-------------] 100.00% 4.14 MiB p/s 25s
+
+
+
+🤹  Configuring local host environment ...
+
+❗  The 'none' driver is designed for experts who need to integrate with an existing VM
+💡  Most users should use the newer 'docker' driver instead, which does not require root!
+📘  For more information, see: https://minikube.sigs.k8s.io/docs/reference/drivers/none/
+
+❗  kubectl and minikube configuration will be stored in /root
+❗  To use kubectl or minikube commands as your own user, you may need to relocate them. For example, to overwrite your own settings, run:
+
+    ▪ sudo mv /root/.kube /root/.minikube $HOME
+    ▪ sudo chown -R $USER $HOME/.kube $HOME/.minikube
+
+💡  This can also be done automatically by setting the env var CHANGE_MINIKUBE_NONE_USER=true
+🔎  Verifying Kubernetes components...
+🌟  Enabled addons: default-storageclass, storage-provisioner
+🏄  Done! kubectl is now configured to use "minikube" by default
+
 ```
+
+
