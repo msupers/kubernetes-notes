@@ -1,0 +1,56 @@
+/* App
+============================================================================= */
+:root {
+
+    --content-max-width                 : 85em;
+
+    --base-background-color: #f6fafc93;
+    --base-color           : var(--mono-shade2);
+    --base-font-family     : -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --base-font-size       : 16px;
+    --base-font-weight     : normal;
+    --base-letter-spacing  : ;
+    --base-line-height     : 1.7;
+
+    /* Emoji */
+    --emoji-size           : calc(var(--base-line-height) * 1em);
+
+    /* Horizontal Rule */
+    --hr-border            : 1px solid var(--mono-tint2);
+
+    /* Mark */
+    --mark-background      : #ffecb3;
+    --mark-color           : ;
+
+    /* Preformatted */
+    --pre-font-family      : var(--base-font-family);
+    --pre-font-size        : var(--base-font-size);
+    --pre-font-weight      : normal;
+    --pre-line-height      : ;
+
+    /* Selection 鼠标选中的颜色*/
+    --selection-color      : #b4d5fe;
+    
+
+    /* Small */
+    --small-font-size      : var(--font-size-s);
+
+    /* Strong */
+    --strong-color         : var(--heading-color);
+    --strong-font-weight   : 600;
+
+    /* Sub/Sup */
+    --subsup-font-size     : var(--font-size-s);
+
+    /* SideBar */
+    --sidebar-background                          : var(--base-background-color);
+    --sidebar-border-color                        : #dbe7f5;
+    --sidebar-border-width                        : 1;
+    --sidebar-padding                             : 0 10px;
+    --sidebar-transition-duration                 : var(--duration-fast);
+    --sidebar-width                               : 20rem;
+
+    /* Code inline */
+    --code-inline-color                           : #ec4b0c;
+    --code-inline-background                      : #ecf2fa;
+}
