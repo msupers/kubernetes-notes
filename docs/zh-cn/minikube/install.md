@@ -1,5 +1,11 @@
 # minikube
 
+!> 安装依赖
+
+```bash
+ sudo apt-get install conntrack
+```
+
 ## 一、参考资料
 
 !>官方资料是进步的最佳实践
