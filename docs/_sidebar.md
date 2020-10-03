@@ -1,2 +1,2 @@
 - kubernetes笔记
-    - [minikube](zh-cn/minikube/install.md)
+    - [minikube](zh-cn/install.md)
