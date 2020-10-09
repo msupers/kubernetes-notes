@@ -1,22 +1,8 @@
 # minikube
 
-?> 安装依赖
+- ubuntu20.04 最小化安装
 
-```bash
- sudo apt-get install conntrack
-```
-
-## 一、参考资料
-
-?>官方资料是进步的最佳实践
-
-- [minikube安装文档:](https://kubernetes.io/zh/docs/tasks/tools/install-minikube/) 
-    - https://kubernetes.io/zh/docs/tasks/tools/install-minikube/
-- [minikube-github:](https://github.com/kubernetes/minikube)
-    - https://github.com/kubernetes/minikube
-
-## 二、ubuntu20.04 安装kubectl
-
+- OS信息
 ```bash
 bourne@vm-10-0-2-100:~$ screenfetch 
                           ./+o+-       bourne@vm-10-0-2-100
@@ -39,55 +25,75 @@ bourne@vm-10-0-2-100:~$ screenfetch
                           `oo++. 
 ```
 
-### 2.1 下载最新版本的kubectl
+## 一. 参考文档
+
+?>官方资料是进步的最佳实践
+
+- [minikube安装文档:](https://kubernetes.io/zh/docs/tasks/tools/install-minikube/) 
+    - https://kubernetes.io/zh/docs/tasks/tools/install-minikube/
+- [minikube-github:](https://github.com/kubernetes/minikube)
+    - https://github.com/kubernetes/minikube
+
+## 二. 安装kubectl
+
+?在安装minikube之前，要确保kubectl已经安装
+
+- 下载最新版本的kubectl
 ```bash
 curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
 ```
 
-### 2.2 下载特定版本的kubectl(Optional)
+- 下载特定版本的kubectl(Optional)
 ```bash
 curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.19.0/bin/linux/amd64/kubectl
 ```
 
-### 2.3 标记 kubectl 文件为可执行
+- 标记 kubectl 文件为可执行
+
 ```bash
 chmod +x ./kubectl
 ```
 
-### 2.4 将文件放到 PATH 路径下
+- 将文件放到 PATH 路径下
+
 ```bash
 sudo mv ./kubectl /usr/local/bin/kubectl
 ```
+- 查看安装的版本
 
-### 2.5 测试你所安装的版本是最新的
 ```bash
 kubectl version --client
 ```
 
 ## 三、ubuntu20.04 安装minikube
 
-?> 前置条件:安装了kubectl
+!> 前置条件:安装了kubectl
 
-### 3.1 二进制包安装minikube
+- 下载minikube并设置可执行权限
 
 ```bash
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
   && chmod +x minikube
 ```
 
-### 3.2 将minikube添加到PATH
+- 将minikube添加到PATH
 ```bash
 sudo mv minikube /usr/local/bin/
 ```
 
-### 3.3 确认安装
+- 确认安装
+
+!>使用`--image-repository`指定minikube使用国内repo
 
 ```bash
 minikube start --vm-driver=none --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
 ```
 
+
+- 启动minikube
+
 ```bash
-bourne@vm-10-0-2-100:~$ sudo minikube start --vm-driver=none --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
+~$ sudo minikube start --vm-driver=none --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
 😄  minikube v1.13.1 on Ubuntu 20.04 (vbox/amd64)
 ✨  Using the none driver based on existing profile
 
@@ -126,5 +132,3 @@ bourne@vm-10-0-2-100:~$ sudo minikube start --vm-driver=none --image-repository=
 🏄  Done! kubectl is now configured to use "minikube" by default
 
 ```
-
-
