@@ -1,6 +1,16 @@
 # minikube
 
-## 零. 环境信息
+
+## 零. 官方文档
+
+?>官方资料是进步的最佳实践
+
+- [minikube安装文档:](https://kubernetes.io/zh/docs/tasks/tools/install-minikube/) 
+    - https://kubernetes.io/zh/docs/tasks/tools/install-minikube/
+- [minikube-github:](https://github.com/kubernetes/minikube)
+    - https://github.com/kubernetes/minikube
+
+## 一. 环境信息
 
 - ubuntu20.04 最小化安装
 
@@ -26,15 +36,6 @@
                    ````` +oo+++o\:    
                           `oo++. 
 ```
-
-## 一. 参考文档
-
-?>官方资料是进步的最佳实践
-
-- [minikube安装文档:](https://kubernetes.io/zh/docs/tasks/tools/install-minikube/) 
-    - https://kubernetes.io/zh/docs/tasks/tools/install-minikube/
-- [minikube-github:](https://github.com/kubernetes/minikube)
-    - https://github.com/kubernetes/minikube
 
 ## 二. 安装kubectl
 
