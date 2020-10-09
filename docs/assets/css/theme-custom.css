@@ -48,9 +48,14 @@
     --sidebar-border-width                        : 1;
     --sidebar-padding                             : 0 10px;
     --sidebar-transition-duration                 : var(--duration-fast);
-    --sidebar-width                               : 20rem;
+    --sidebar-width                               : 22rem;
 
-    /* Code inline */
     --code-inline-color                           : #ec4b0c;
     --code-inline-background                      : #ecf2fa;
+    --code-inline-border-radius                   : var(--border-radius-s)
+
+    /* Borders */
+    --border-radius-s : ;
+    --border-radius-m : ;
+    --border-radius-l : ;
 }
