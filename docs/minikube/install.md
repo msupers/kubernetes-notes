@@ -3,8 +3,6 @@
 
 ## 零. 官方文档
 
-?>官方资料是进步的最佳实践
-
 - [minikube安装文档:](https://kubernetes.io/zh/docs/tasks/tools/install-minikube/) 
     - https://kubernetes.io/zh/docs/tasks/tools/install-minikube/
 - [minikube-github:](https://github.com/kubernetes/minikube)
