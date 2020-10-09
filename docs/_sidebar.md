@@ -1,3 +1,3 @@
 * 简介
     * [README](./)
-    * [kubernetes学习笔记](minikube/overview.md)
+    * [ubuntu上安装minikube](minikube/install.md)
