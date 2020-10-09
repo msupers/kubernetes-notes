@@ -1,6 +1,6 @@
 # 简介
 
-?> kubernetes学习笔记
+?>kubernetes学习笔记
 
 ## minikube
 
