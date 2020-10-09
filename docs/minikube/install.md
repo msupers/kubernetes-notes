@@ -6,7 +6,7 @@
 
 - OS信息
 ```bash
-bourne@vm-10-0-2-100:~$ screenfetch 
+~$ screenfetch 
                           ./+o+-       bourne@vm-10-0-2-100
                   yyyyy- -yyyyyy+      OS: Ubuntu 20.04 focal
                ://+//////-yyyyyyo      Kernel: x86_64 Linux 5.4.0-48-generic
