@@ -39,7 +39,7 @@
 
 ## 二. 安装kubectl
 
-?在安装minikube之前，要确保kubectl已经安装
+?>在安装minikube之前，要确保kubectl已经安装
 
 - 下载最新版本的kubectl
 ```bash
@@ -68,7 +68,7 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 kubectl version --client
 ```
 
-## 三、ubuntu20.04 安装minikube
+## 三. 安装minikube
 
 !> 前置条件:安装了kubectl
 
