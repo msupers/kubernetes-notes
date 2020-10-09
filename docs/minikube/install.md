@@ -1,6 +1,6 @@
 # minikube
 
-!> 安装依赖
+?> 安装依赖
 
 ```bash
  sudo apt-get install conntrack
@@ -8,7 +8,7 @@
 
 ## 一、参考资料
 
-!>官方资料是进步的最佳实践
+?>官方资料是进步的最佳实践
 
 - [minikube安装文档:](https://kubernetes.io/zh/docs/tasks/tools/install-minikube/) 
     - https://kubernetes.io/zh/docs/tasks/tools/install-minikube/
@@ -66,7 +66,7 @@ kubectl version --client
 
 ## 三、ubuntu20.04 安装minikube
 
-!> 前置条件:安装了kubectl
+?> 前置条件:安装了kubectl
 
 ### 3.1 二进制包安装minikube
 
