@@ -2,7 +2,7 @@
 ============================================================================= */
 :root {
 
-    --content-max-width                 : 85em;
+    --content-max-width                 : 75em;
 
     --base-background-color: #f6fafc93;
     --base-color           : var(--mono-shade2);
