@@ -2,7 +2,7 @@
 ============================================================================= */
 :root {
 
-    --content-max-width                 : 75em;
+    --content-max-width                 : 80em;
 
     --base-background-color: #f6fafc93;
     --base-color           : var(--mono-shade2);
@@ -48,7 +48,7 @@
     --sidebar-border-width                        : 1;
     --sidebar-padding                             : 0 10px;
     --sidebar-transition-duration                 : var(--duration-fast);
-    --sidebar-width                               : 20rem;
+    --sidebar-width                               : 26rem;
 
     /* Code inline */
     --code-inline-color                           : #ec4b0c;

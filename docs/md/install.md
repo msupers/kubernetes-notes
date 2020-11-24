@@ -1,18 +1,14 @@
-# minikube
-
-
-## 零. 官方文档
+# ubuntu20.04 安装 minikube 
+## 参考资料
 
 - [minikube安装文档:](https://kubernetes.io/zh/docs/tasks/tools/install-minikube/) 
-    - https://kubernetes.io/zh/docs/tasks/tools/install-minikube/
+
 - [minikube-github:](https://github.com/kubernetes/minikube)
-    - https://github.com/kubernetes/minikube
 
 ## 一. 环境信息
 
-- ubuntu20.04 最小化安装
+### 1-1. ubuntu20.04 最小化安装
 
-- OS信息
 ```bash
 ~$ screenfetch 
                           ./+o+-       bourne@vm-10-0-2-100
@@ -39,28 +35,27 @@
 
 ?>在安装minikube之前，要确保kubectl已经安装
 
-- 下载最新版本的kubectl
+### 2-1. 下载最新版本的kubectl
 ```bash
 curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
 ```
 
-- 下载特定版本的kubectl(Optional)
+### 2-2. 下载特定版本的kubectl(Optional)
 ```bash
 curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.19.0/bin/linux/amd64/kubectl
 ```
 
-- 标记 kubectl 文件为可执行
-
+### 2-3. 标记 kubectl 文件为可执行
 ```bash
 chmod +x ./kubectl
 ```
 
-- 将文件放到 PATH 路径下
+### 2-4. 将文件放到 PATH 路径下
 
 ```bash
 sudo mv ./kubectl /usr/local/bin/kubectl
 ```
-- 查看安装的版本
+### 2-5. 查看安装的版本
 
 ```bash
 kubectl version --client
@@ -70,28 +65,21 @@ kubectl version --client
 
 !> 前置条件:安装了kubectl
 
-- 下载minikube并设置可执行权限
+### 3-1. 下载minikube并设置可执行权限
 
 ```bash
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
   && chmod +x minikube
 ```
 
-- 将minikube添加到PATH
+### 3-2. 将minikube添加到PATH
 ```bash
 sudo mv minikube /usr/local/bin/
 ```
 
-- 确认安装
+### 3-3. 启动minikube
 
 !>使用`--image-repository`指定minikube使用国内repo
-
-```bash
-minikube start --vm-driver=none --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
-```
-
-
-- 启动minikube
 
 ```bash
 ~$ sudo minikube start --vm-driver=none --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers
