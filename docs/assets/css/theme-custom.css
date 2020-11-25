@@ -48,7 +48,7 @@
     --sidebar-border-width                        : 1;
     --sidebar-padding                             : 0 10px;
     --sidebar-transition-duration                 : var(--duration-fast);
-    --sidebar-width                               : 26rem;
+    --sidebar-width                               : 30rem;
 
     /* Code inline */
     --code-inline-color                           : #ec4b0c;
